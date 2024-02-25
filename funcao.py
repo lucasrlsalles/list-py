@@ -1,11 +1,11 @@
-import main
+from main import *
 
 def adiciona_item():
     item = (input("Digite uma fruta: "))
-    main.list.append(item)
-    print(main.list)
+    list.append()
+    return
 
 def remove_item():
     item = (input("Digite uma fruta: "))
-    main.list.remove(item)
-    print(main.list)
+    list.remove()
+    return

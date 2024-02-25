@@ -1,4 +1,4 @@
-import funcao
+from funcao import *
 
 list = ['banana','morango']
 
@@ -8,13 +8,10 @@ print("3 - Fechar")
 answer = int(input("Opção: "))
 
 if answer == 1:
-    funcao.adiciona_item()
+    adiciona_item()
 
 elif answer == 2:
-    funcao.remove_item()
+    remove_item()
 
 elif answer == 3:
     print("Encerrando aplicação...")
-
-
-
