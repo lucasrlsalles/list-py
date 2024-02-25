@@ -2,6 +2,7 @@ import funcao
 
 list = ['banana','morango']
 
+print('Lista contém: ', list)
 print("1 - Criar um item")
 print("2 - Remover Item")
 print("3 - Fechar")
