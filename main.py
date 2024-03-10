@@ -1,21 +1,22 @@
-import funcao
+from funcao import adiciona_item, remove_item
 
-list = ['banana','morango']
+my_list = ['banana','morango']
 
-print('Lista contém: ', list)
-print("1 - Criar um item")
-print("2 - Remover Item")
-print("3 - Fechar")
-answer = int(input("Opção: "))
+while True:
+    print('Lista contém: ', my_list)
+    print("1 - Criar um item")
+    print("2 - Remover Item")
+    print("3 - Fechar")
+    
+    answer = int(input("Opção: "))
 
-if answer == 1:
-    funcao.adiciona_item()
+    if answer == 1:
+        adiciona_item(my_list)
+        
 
-elif answer == 2:
-    funcao.remove_item()
+    elif answer == 2:
+        remove_item(my_list)
 
-elif answer == 3:
-    print("Encerrando aplicação...")
-
-
-
+    else:
+        print("!!! Escolha incorreta !!!")
+        break

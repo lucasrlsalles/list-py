@@ -1,11 +1,13 @@
-import main
+def adiciona_item(_list):
+    item = str(input("Digite uma fruta: "))
+    _list.append(item)
+    return
 
-def adiciona_item():
-    item = (input("Digite uma fruta: "))
-    main.list.append(item)
-    print(main.list)
+def remove_item(_list):
+    item = str(input("Digite uma fruta: "))
+    try:
+        _list.remove(item)
+    except Exception:
+        print("\n!!! Item não encontrado !!!\n")
+    return
 
-def remove_item():
-    item = (input("Digite uma fruta: "))
-    main.list.remove(item)
-    print(main.list)
